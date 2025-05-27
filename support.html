@@ -1,66 +1,70 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Служба поддержки</title>
+  <title>Служба підтримки</title>
   <link rel="stylesheet" href="support.css" />
 </head>
 <body>
   <header>
-    <div class="logo">🌐 Поддержка</div>
+    <div class="logo">🌐 Підтримка</div>
+    <div class="language-switcher">
+      <a href="support.html" class="lang-btn">RU</a>
+      <a href="support-ua.html" class="lang-btn active">UA</a>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Как мы можем вам помочь?</h1>
-      <p>Если у вас есть вопросы, предложения или жалобы — напишите нам!</p>
+      <h1>Чим ми можемо вам допомогти?</h1>
+      <p>Якщо у вас є запитання, пропозиції чи скарги — напишіть нам!</p>
     </section>
 
     <section class="faq">
-      <h2>Часто задаваемые вопросы</h2>
+      <h2>Поширені запитання</h2>
       <div class="faq-item">
-        <h3>Как зарегистрироваться на сайте?</h3>
-        <p>Нажмите на кнопку "Регистрация" в верхнем меню и заполните данные.</p>
+        <h3>Як зареєструватися на сайті?</h3>
+        <p>Натисніть на кнопку "Реєстрація" у верхньому меню та заповніть дані.</p>
       </div>
       <div class="faq-item">
-        <h3>Как изменить заказ?</h3>
-        <p>Откройте корзину, удалите лишние товары и создайте новый заказ.</p>
+        <h3>Як змінити замовлення?</h3>
+        <p>Відкрийте кошик, видаліть зайві товари та створіть нове замовлення.</p>
       </div>
     </section>
 
     <section class="contact-form">
-      <h2>Форма обратной связи</h2>
+      <h2>Форма зворотного зв’язку</h2>
       <form onsubmit="sendMessage(event)">
-        <input type="text" placeholder="Ваше имя" required />
+        <input type="text" placeholder="Ваше ім’я" required />
         <input type="email" placeholder="Email" required />
-        <textarea rows="5" placeholder="Ваше сообщение..." required></textarea>
-        <button type="submit">Отправить</button>
+        <textarea rows="5" placeholder="Ваше повідомлення..." required></textarea>
+        <button type="submit">Надіслати</button>
       </form>
       <p id="responseMsg"></p>
     </section>
 
     <section class="complaint-form">
-      <h2>Оставить жалобу</h2>
+      <h2>Залишити скаргу</h2>
       <form onsubmit="submitComplaint(event)">
-        <input type="text" placeholder="Ваше имя" required />
+        <input type="text" placeholder="Ваше ім’я" required />
         <input type="email" placeholder="Email" required />
-        <input type="text" placeholder="Тема жалобы" required />
-        <textarea rows="5" placeholder="Опишите проблему..." required></textarea>
-        <button type="submit">Отправить жалобу</button>
+        <input type="text" placeholder="Тема скарги" required />
+        <textarea rows="5" placeholder="Опишіть проблему..." required></textarea>
+        <button type="submit">Надіслати скаргу</button>
       </form>
       <p id="complaintMsg"></p>
     </section>
 
     <section class="contacts">
-      <h2>Контактная информация</h2>
+      <h2>Контактна інформація</h2>
       <p>📧 Email: support@123.com</p>
       <p>📞 Телефон: +380 (99) 123-45-67</p>
     </section>
   </main>
 
   <footer>
-    &copy; 2025.— Служба поддержки
+    &copy; 2025.— Служба підтримки
   </footer>
 
   <script src="support.js"></script>
