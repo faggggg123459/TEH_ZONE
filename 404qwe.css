@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #0f0f0f, #000);
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 50px 20px;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 120px;
+  margin: 0;
+  color: #00ffff;
+  text-shadow: 0 0 20px #00ffff, 0 0 60px #0ff;
+}
+
+.subtitle {
+  font-size: 28px;
+  color: #fff;
+  margin-top: -10px;
+}
+
+.description {
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.tips-box {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ffff44;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px #00ffff55;
+}
+
+.tips-box a {
+  color: #0ff;
+  text-decoration: underline;
+}
+
+.roadmap {
+  margin-top: 40px;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #00ffff44;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #00ffff55;
+}
+
+.roadmap h2 {
+  color: #00ffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.step {
+  flex: 1 1 180px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px #0ff3;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.step p {
+  color: #eee;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.step a {
+  color: #0ff;
+  text-decoration: underline;
+}
+
+footer {
+  background: #0f0f0f;
+  color: #888;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+}
