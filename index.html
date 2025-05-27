@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,32 +19,31 @@
         <nav>
           <ul>
             <li><a href="support.html">Служба підтримки</a></li>
-            <li><a href="onas.html">О нас</a></li>
+            <li><a href="onas.html">Про нас</a></li>
             <li><a href="#catalog">Каталог</a></li>
             <li><a href="#top">Топ-5</a></li>
-            <li><a href="#" onclick="openCart()">Корзина</a></li>
+            <li><a href="#" onclick="openCart()">Кошик</a></li>
           </ul>
         </nav>
-        <button class="btn" onclick="openRegister()">Регистрация</button>
+        <button class="btn" onclick="openRegister()">Реєстрація</button>
       </header>
       
       <div class="modal" id="registerModal">
-  <div class="modal-content">
-    <span class="close-btn" onclick="closeRegister()">×</span>
-    <h2>Регистрация</h2>
-    <input type="text" id="name" placeholder="Ваше имя"><br><br>
-    <input type="email" id="email" placeholder="Email"><br><br>
-    <p id="error-message" style="color: red;"></p>
-    <button class="btn" onclick="register()">Зарегистрироваться</button>
-  </div>
-</div>
-
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeRegister()">×</span>
+          <h2>Реєстрація</h2>
+          <input type="text" id="name" placeholder="Ваше ім’я"><br><br>
+          <input type="email" id="email" placeholder="Email"><br><br>
+          <p id="error-message" style="color: red;"></p>
+          <button class="btn" onclick="register()">Зареєструватися</button>
+        </div>
+      </div>
 
       <section id="hero" class="hero">
         <div class="hero-text">
-          <h1>Ваш современный цветочный магазин</h1>
-          <p>Свежие цветы с доставкой. Удивите любимых!</p>
-          <button class="btn" onclick="openCart()">Открыть корзину</button>
+          <h1>Ваш сучасний квітковий магазин</h1>
+          <p>Свіжі квіти з доставкою. Вразьте коханих!</p>
+          <button class="btn" onclick="openCart()">Відкрити кошик</button>
         </div>
         <div class="hero-image">
           <img src="images/bouquet.jpg" alt="Букет" />
@@ -52,83 +51,72 @@
       </section>
 
       <section id="about" class="section">
-        <h2>О нашем магазине</h2>
+        <h2>Про наш магазин</h2>
         <p>
-          10 лет создаём композиции из свежих цветов. Доставим быстро и красиво.
+          Уже 10 років створюємо композиції зі свіжих квітів. Доставимо швидко та красиво.
         </p>
       </section>
 
       <section id="top" class="section">
-        <h2>Топ-5 лучших цветов</h2>
+        <h2>Топ-5 найкращих квітів</h2>
         <div class="flowers-grid" id="topFlowers"></div>
       </section>
 
       <section id="catalog" class="section">
-  <h2>Каталог</h2>
-  <div class="flowers-grid">
-    <div class="flower-card">
-      <img src="images/vesna.jpg" alt="Весна" />
-      <h3>Букет «Весна»</h3>
-      <p>1500₴</p>
-      <div class="action-row">
-        <button onclick="updateQuantity('catalog-0', -1)">-</button>
-        <span id="qty-catalog-0">0</span>
-        <button onclick="updateQuantity('catalog-0', 1)">+</button>
-        <button class="btn" onclick="addToCartCustom('Букет «Весна»', 1500, 'catalog-0')">Добавить</button>
-      </div>
-    </div>
+        <h2>Каталог</h2>
+        <div class="flowers-grid">
+          <div class="flower-card">
+            <img src="images/vesna.jpg" alt="Весна" />
+            <h3>Букет «Весна»</h3>
+            <p>1500₴</p>
+            <div class="action-row">
+              <button onclick="updateQuantity('catalog-0', -1)">-</button>
+              <span id="qty-catalog-0">0</span>
+              <button onclick="updateQuantity('catalog-0', 1)">+</button>
+              <button class="btn" onclick="addToCartCustom('Букет «Весна»', 1500, 'catalog-0')">Додати</button>
+            </div>
+          </div>
 
-    <div class="flower-card">
-      <img src="images/love.jpg" alt="Любовь" />
-      <h3>Композиция «Любовь»</h3>
-      <p>2000₴</p>
-      <div class="action-row">
-        <button onclick="updateQuantity('catalog-1', -1)">-</button>
-        <span id="qty-catalog-1">0</span>
-        <button onclick="updateQuantity('catalog-1', 1)">+</button>
-        <button class="btn" onclick="addToCartCustom('Композиция «Любовь»', 2000, 'catalog-1')">Добавить</button>
-      </div>
-    </div>
+          <div class="flower-card">
+            <img src="images/love.jpg" alt="Любов" />
+            <h3>Композиція «Любов»</h3>
+            <p>2000₴</p>
+            <div class="action-row">
+              <button onclick="updateQuantity('catalog-1', -1)">-</button>
+              <span id="qty-catalog-1">0</span>
+              <button onclick="updateQuantity('catalog-1', 1)">+</button>
+              <button class="btn" onclick="addToCartCustom('Композиція «Любов»', 2000, 'catalog-1')">Додати</button>
+            </div>
+          </div>
 
-    <div class="flower-card">
-      <img src="images/basket.jpg" alt="Корзина" />
-      <h3>Цветочная корзина</h3>
-      <p>2500₴</p>
-      <div class="action-row">
-        <button onclick="updateQuantity('catalog-2', -1)">-</button>
-        <span id="qty-catalog-2">0</span>
-        <button onclick="updateQuantity('catalog-2', 1)">+</button>
-        <button class="btn" onclick="addToCartCustom('Цветочная корзина', 2500, 'catalog-2')">Добавить</button>
-      </div>
-    </div>
-  </div>
-</section>
+          <div class="flower-card">
+            <img src="images/basket.jpg" alt="Кошик" />
+            <h3>Квіткова корзина</h3>
+            <p>2500₴</p>
+            <div class="action-row">
+              <button onclick="updateQuantity('catalog-2', -1)">-</button>
+              <span id="qty-catalog-2">0</span>
+              <button onclick="updateQuantity('catalog-2', 1)">+</button>
+              <button class="btn" onclick="addToCartCustom('Квіткова корзина', 2500, 'catalog-2')">Додати</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div class="modal" id="cartModal">
         <div class="modal-content">
-          <h2>Корзина</h2>
+          <h2>Кошик</h2>
           <div id="cartItems"></div>
           <div class="btn-group">
-            <a href="404qwe.html" class="btn">Купить</a>
-            <button class="btn" onclick="clearCart()">Очистить</button>
-            <button class="btn" onclick="closeCart()">Закрыть</button>
+            <a href="404qwe.html" class="btn">Купити</a>
+            <button class="btn" onclick="clearCart()">Очистити</button>
+            <button class="btn" onclick="closeCart()">Закрити</button>
           </div>
         </div>
       </div>
 
-      <div class="modal" id="registerModal">
-        <div class="modal-content">
-          <span class="close-btn" onclick="closeRegister()">×</span>
-          <h2>Регистрация</h2>
-          <input type="text" id="name" placeholder="Ваше имя" /><br /><br />
-          <input type="email" id="email" placeholder="Email" /><br /><br />
-          <p id="error-message" style="color: red"></p>
-          <button class="btn" onclick="register()">Зарегистрироваться</button>
-        </div>
-      </div>
-
       <footer>
-        &copy; 2025 Цветочный магазин.
+        &copy; 2025 Квітковий магазин.
       </footer>
     </div>
   </body>
