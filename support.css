@@ -146,3 +146,31 @@ footer {
   font-size: 14px;
   box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
 }
+
+.language-switcher {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-top: 5px;
+}
+
+.lang-btn {
+  text-decoration: none;
+  background: #e0f2f1;
+  color: #00796b;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.lang-btn:hover {
+  background: #b2dfdb;
+}
+
+.lang-btn.active {
+  background: #4db6ac;
+  color: white;
+  cursor: default;
+}
+
