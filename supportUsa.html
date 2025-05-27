@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Service</title>
+  <link rel="stylesheet" href="support.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🌐 Support</div>
+    <div class="language-switcher">
+      <a href="support.html" class="lang-btn">UA</a>
+      <a href="supportRU.html" class="lang-btn active">Ru</a>
+      <a href="support-ua.html" class="lang-btn active">Usa</a>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <h1>How can we help you?</h1>
+      <p>If you have questions, suggestions, or complaints — write to us!</p>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>How to register on the site?</h3>
+        <p>Click the "Register" button in the top menu and fill in the details.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How to change an order?</h3>
+        <p>Open the cart, remove unwanted items, and create a new order.</p>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Feedback Form</h2>
+      <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="5" placeholder="Your message..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="responseMsg"></p>
+    </section>
+
+    <section class="complaint-form">
+      <h2>Leave a Complaint</h2>
+      <form onsubmit="submitComplaint(event)">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Complaint subject" required />
+        <textarea rows="5" placeholder="Describe the issue..." required></textarea>
+        <button type="submit">Submit Complaint</button>
+      </form>
+      <p id="complaintMsg"></p>
+    </section>
+
+    <section class="contacts">
+      <h2>Contact Information</h2>
+      <p>📧 Email: support@123.com</p>
+      <p>📞 Phone: +380 (99) 123-45-67</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025.— Support Service
+  </footer>
+
+  <script src="support.js"></script>
+</body>
+</html>
