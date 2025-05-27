@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Служба поддержки</title>
+  <link rel="stylesheet" href="support.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🌐 Поддержка</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Как мы можем вам помочь?</h1>
+      <p>Если у вас есть вопросы, предложения или жалобы — напишите нам!</p>
+    </section>
+
+    <section class="faq">
+      <h2>Часто задаваемые вопросы</h2>
+      <div class="faq-item">
+        <h3>Как зарегистрироваться на сайте?</h3>
+        <p>Нажмите на кнопку "Регистрация" в верхнем меню и заполните данные.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Как изменить заказ?</h3>
+        <p>Откройте корзину, удалите лишние товары и создайте новый заказ.</p>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Форма обратной связи</h2>
+      <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Ваше имя" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="5" placeholder="Ваше сообщение..." required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+      <p id="responseMsg"></p>
+    </section>
+
+    <section class="complaint-form">
+      <h2>Оставить жалобу</h2>
+      <form onsubmit="submitComplaint(event)">
+        <input type="text" placeholder="Ваше имя" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Тема жалобы" required />
+        <textarea rows="5" placeholder="Опишите проблему..." required></textarea>
+        <button type="submit">Отправить жалобу</button>
+      </form>
+      <p id="complaintMsg"></p>
+    </section>
+
+    <section class="contacts">
+      <h2>Контактная информация</h2>
+      <p>📧 Email: support@123.com</p>
+      <p>📞 Телефон: +380 (99) 123-45-67</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025.— Служба поддержки
+  </footer>
+
+  <script src="support.js"></script>
+</body>
+</html>
